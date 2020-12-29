@@ -1,0 +1,17 @@
+<view class="tabs">
+    <view class="tabs_title">
+        <!-- <view class="title_item active">首页</view>
+        <view class="title_item">原创</view>
+        <view class="title_item">分类</view>
+        <view class="title_item">关于</view> -->
+        <view wx:for="{{tabs}}" wx:key="id" class="title_item  {{item.isActive?'active':''}}" bindtap="handelitemtap" data-index="{{index}}">
+            {{item.name}}
+        </view>
+    </view>
+    <view class="tabs_content">
+        <slot></slot>
+    </view>
+</view>
+<!-- 1  父组件（页面）向子组件传递数据通过标签属性的方式来传递
+        1 在子组件上进行接收
+        2 把这个数据当成是data中的数据直接用就可以 -->

@@ -1,0 +1,87 @@
+
+<!-- 1 字符串 -->
+<view> {{msg}} </view>
+<!-- 2 数字类型 -->
+<view>{{num}}</view>
+<!-- 3 bool类型  -->
+<view> 是否是伪娘: {{isGirl}} </view>
+<!-- 4 object类型 -->
+<view>{{person.age}}</view>
+<view>{{person.height}}</view>
+<view>{{person.weight}}</view>
+<view>{{person.name}}</view>
+
+<!-- 5 在标签的属性中使用 -->
+<view data-num="{{num}}"> 自定义属性</view>
+
+<view>
+  <checkbox checked="{{isChecked}}"> </checkbox>
+</view>
+
+<view>{{1+1}}</view>
+
+<view>{{'1'+'1'}}</view>
+
+<view>{{ 11%2===0 ? '偶数' : '奇数' }}</view>
+
+ <view>
+   <view 
+  wx:for="{{list}}"
+  wx:for-item="item"
+  wx:for-index="index"
+  wx:key="id"
+   >
+     索引：{{index}}
+     --
+     值:{{item.name}}
+   </view>
+ </view>
+
+ <view>
+   <view>对象循环</view>
+   <view 
+  wx:for="{{person}}"
+  wx:for-item="value"  
+  wx:for-index="key"
+  wx:key="age"
+  >
+     属性:{{key}}
+     --
+     值:{{value}}
+   </view>
+ </view>
+
+
+  <view>
+    <block 
+   wx:for="{{list}}"
+   wx:for-item="item"
+   wx:for-index="index"
+   wx:key="id"
+   class="my_list"
+    >
+      索引：{{index}}
+      --
+      值:{{item.name}}
+    </block>
+  </view>
+
+
+
+   <view>
+     <view>条件渲染</view>
+     <view wx:if="{{true}}">显示</view>
+     <view wx:if="{{false}}">隐藏</view>
+
+     <view wx:if="{{flase}}">1</view>
+     <view wx:elif="{{flase}}">2 </view>
+     <view wx:else> 3 </view>
+
+     <view>---------------</view>
+     <view hidden >hidden1</view>
+     <view hidden="{{false}}" >hidden2</view>
+
+     <view>-----000-------</view>
+     <view wx:if="{{false}}">wx:if</view>
+     <view hidden  style="display: flex;" >hidden</view>
+   </view>

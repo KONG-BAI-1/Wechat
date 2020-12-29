@@ -1,0 +1,18 @@
+<!--pages/demo03/demo03.wxml-->
+<text selectable>pages/d/demo03.wxml</text>
+<!-- <image mode="bottom" lazy-load="{{true}}" src="https://i.loli.net/2020/12/25/Fec2RjJKsmHbTqE.jpg" /> -->
+
+<swiper indicator-dots="true" autoplay="true" circular="true">
+  <swiper-item class="" item-id="">
+    <image class="" src="http://shp.qpic.cn/ishow/2735121015/1607584793_84828260_11833_sProdImgNo_1.jpg/0"
+      mode="widthFix" lazy-load="false" binderror="" bindload="" />
+  </swiper-item>
+  <swiper-item class="" item-id="">
+    <image class="" src="http://shp.qpic.cn/ishow/2735112718/1606472113_84828260_13758_sProdImgNo_1.jpg/0"
+      mode="widthFix" lazy-load="false" binderror="" bindload="" />
+  </swiper-item>
+  <swiper-item class="" item-id="">
+    <image class="" src="http://shp.qpic.cn/ishow/2735121517/1608023389_84828260_23287_sProdImgNo_1.jpg/0"
+      mode="widthFix" lazy-load="false" binderror="" bindload="" />
+  </swiper-item>
+</swiper>

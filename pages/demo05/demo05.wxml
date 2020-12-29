@@ -1,0 +1,15 @@
+<icon class="" type="success_no_circle" size="23" color="red"></icon>
+<radio-group bindchange="handlechange">
+  <radio class="" value="男" color="">男</radio>
+  <radio class="" value="女" color="">女</radio>
+</radio-group>
+<view>您选中的是{{gender}}</view>
+<view>
+  <checkbox-group bindchange="handlefruitchange">
+    <checkbox class="" value="{{item.value}}" wx:for="{{list}}" wx:key="id">{{item.name}}</checkbox>
+  </checkbox-group>
+</view>
+<view>选中的水果：{{checkedlsit}}</view>
+<Tabs tabs="{{tabs}}" binditemChange="handleItemChange">
+  <view>父组件传送过来的</view>
+</Tabs>
